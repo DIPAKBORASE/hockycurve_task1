@@ -1,0 +1,68 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+  margin: 0;
+}
+
+.ad-container {
+  width: 300px;
+  height: 250px;
+  background-color: #ff4444;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 2s ease-in-out;
+}
+
+.ad-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.ad-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+
+.ad-message {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  color: #fff;
+  margin: 0 0 10px 0;
+}
+
+.ad-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  color: #ff4444;
+  background-color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.ad-button:hover {
+  background-color: #ff8888;
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
